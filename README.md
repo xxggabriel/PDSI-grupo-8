@@ -104,7 +104,7 @@ Nesta seção, descrevemos o passo a passo executado para implementar e avaliar 
 
 1.  **Pré-processamento dos Dados**:
     
-    -   Preparação dos datasets WSJ0-2mix e WSJ0-3mix.
+    -   Preparação dos datasets.
     -   Segmentação dos áudios em chunks adequados para o modelo.
 2.  **Implementação do Modelo**:
     
@@ -156,18 +156,13 @@ Comparando nossos resultados com os reportados por Subakan et al. (2021), observ
 
 ## Conclusões
 
-Neste trabalho, implementamos e avaliamos um modelo de separação de fontes de fala baseado em transformadores, o SepFormer. Os resultados obtidos validam a eficácia da abordagem e destacam as vantagens de utilizar arquiteturas baseadas em atenção para tarefas de processamento de áudio.
+Neste projeto, usamos o modelo SepFormer para entender e aplicar o pipeline de um sistema de separação de fala baseado em aprendizado profundo. Mesmo sem treinar o modelo do zero, essa experiência foi fundamental para explorarmos todas as etapas do pipeline, desde o entendimento dos dados  até uma visão macro da dificuldade real envolvida em aplicar este tipo de solução.
 
-As principais lições aprendidas incluem:
+O SepFormer apresentou desempenho considerável em métricas como SI-SNRi e SDRi nos datasets WSJ0-2mix e WSJ0-3mix (os quais foram usados para treinar o modelo), que são amplamente utilizados como benchmarks na área. No entanto, esses dados são misturas artificiais feitas em condições controladas, bem diferentes de ambientes reais, onde o ruído e a complexidade acústica tornam a separação de fala muito mais desafiadora. Isso nos leva a questionar como o modelo realmente se comportaria em situações mais complexas e próximas do cotidiano.
 
--   A importância do pré-processamento adequado dos dados para o sucesso do treinamento.
-    
--   A eficiência computacional proporcionada pelos transformadores em comparação com redes recorrentes.
-    
--   A relevância das métricas SI-SNRi e SDRi para avaliar a qualidade da separação de fontes.
-    
+Além disso, embora as métricas matemáticas sejam uma boa referência, percebemos que focar apenas nelas não é suficiente. O aprendizado mais significativo veio de entender como cada etapa do pipeline funciona, os desafios práticos enfrentados e como tudo se conecta no final. Esse tipo de análise é o que realmente agrega valor para o desenvolvimento de sistemas robustos.
 
-Para trabalhos futuros, consideramos explorar a aplicação do modelo em ambientes com ruído de fundo e a adaptação para separação de fontes em idiomas diferentes do inglês.
+Por fim, apesar de o SepFormer ser uma solução eficiente para os datasets testados, é importante reconhecer que ele não é a solução final. Precisamos continuar explorando outros modelos e técnicas que possam lidar melhor com separação de áudio em ambientes ruidosos e mais próximos da realidade. Esse é um passo essencial para tornar soluções como essa aplicáveis em cenários do mundo real.
 
 ----------
 
