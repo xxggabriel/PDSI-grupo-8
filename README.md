@@ -139,20 +139,7 @@ Nesta seção, descrevemos o passo a passo executado para implementar e avaliar 
 
 ----------
 
-# Seção IV. Resultados e Conclusões
-
-## Resultados
-
-Após a implementação e testes feito com o modelo SepFormer utilizando o dataset WSJ0-2mix, obtivemos os seguintes resultados:
-
--   **SI-SNRi**: 22.1 dB
--   **SDRi**: 21.5 dB
-
-Os resultados indicam uma melhoria significativa na separação das fontes de fala em comparação com a mistura original. As métricas obtidas estão próximas aos valores de estado da arte reportados no artigo original do SepFormer, confirmando a eficácia do modelo.
-
-## Comparação com a Literatura
-
-Comparando nossos resultados com os reportados por Subakan et al. (2021), observamos que o modelo reproduzido atinge desempenhos similares, demonstrando a capacidade do SepFormer em separar vozes simultâneas com alta precisão.
+# Seção IV. Conclusões
 
 ## Conclusões
 
